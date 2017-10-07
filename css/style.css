@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.main_banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    line-height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 500;
+    font-size: 2em; 
+}
+
+.main_banner .video {
+    width: 100%;
+}
+
+.main_banner nav {
+     position: absolute;
+     top:0;
+     z-index: 999;
+     width: 100%;
+     height: 80px;
+     line-height: 80px;
+     text-align: right;
+}
+
+.main_banner nav ul {
+     display: inline-block;
+     margin-right: 3%;
+}
+.main_banner nav ul li {
+     float: left;
+     font-size: 18px;
+     list-style:  none;
+     margin: 0 20px;
+
+}
+
+
+.main_banner nav ul li a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main_banner nav ul li a:hover {
+    color: rgba(255, 255, 255, 1);
+    
+}
+.main_banner nav ul li a:link {
+    text-decoration: none;
+}
+.main_banner .video_sample_text{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+.banner_info {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 80px 0;
+
+}
+.banner_info h1 {
+    font-size: 30px;
+}
+.banner_info p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #999999;
+}
+.portfolio_area {
+ text-align: center;
+ padding: 50px 0;
+ margin-bottom: 100px;
+}
+
+.portfolio_area .content {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.portfolio_area .content h1 {
+    font-size: 30px;
+    margin:30px 0 50px;
+    font-weight: 600;
+}
+
+.portfolio_area .content .card {
+    position: relative;
+    display: inline-block;
+    margin: 12px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+}
+
+.portfolio_area .content .card .pf_thumnail {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolio_area .content .card .pf_thumnail_01 {
+    background-image: url(../img/1.png);
+} 
+
+.portfolio_area .content .card .pf_thumnail_02 {
+    background-image: url(../img/2.png);
+} 
+
+.portfolio_area .content .card .pf_thumnail_03 {
+    background-image: url(../img/3.png);
+} 
+
+.portfolio_area .content .card .pf_thumnail_04 {
+    background-image: url(../img/4.png);
+} 
+
+.portfolio_area .content .card .pf_thumnail_05 {
+    background-image: url(../img/5.png);
+} 
+
+.portfolio_area .content .card .pf_thumnail_06 {
+    background-image: url(../img/6.png);
+} 
+
+.portfolio_area .content .card .pf_thumnail_text {
+    display: none;
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.portfolio_area .content .card .pf_thumnail_text h3 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    height: 200px;
+    line-height: 300px;
+}
+.portfolio_area .content .card:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.portfolio_area .content .card:hover  .pf_thumnail_text {
+       display: block;
+}    
+
+footer {
+    text-align: center;
+    background-color: #444444;
+    color: white;
+    height: 80px;
+    line-height: 80px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.modal .modal-dialog_portfolio {
+    width: 800px;
+    text-align: center;
+    margin: 80px auto;
+
+}
+
+.modal .modal-dialog_portfolio .modal-content img {
+    width: 100%;
+}
+
+.modal .modal-dialog_portfolio .modal-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color:#333333;
+    margin: 50px 0 15px;
+
+}
+
+.modal .modal-dialog_portfolio .modal-content h3 {
+
+    font-size: 17px;
+    color: #aaaaaa;
+    margin-bottom: 40px;
+}
+
+.modal .modal-dialog_portfolio .modal-content p {
+    text-align: left;
+    font-size: 14px;
+    color: #777777;
+    padding: 0 70px;
+    margin: 15px 0;
+    line-height: 20px;
+}
+
+.modal .modal-dialog_portfolio .modal-content a {
+    text-decoration: none;
+    font-size:  15px
+    font-weight: bold;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #555555;
+    margin: 30px 0 20px;
+    display: inline-block;
+    padding: 8px 30px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.modal .modal-dialog_portfolio .modal-content a:hover {
+    background-color: #cccccc;
+    color: white;
+    border: 1px solid #ccc;
+}    
+
+.modal .modal-dialog_portfolio .modal-content h5 {
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    margin: 20px 0 60px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}   
+
+.modal .modal-dialog_portfolio .modal-content h5:hover {
+ color: #0dd174;
+} 
